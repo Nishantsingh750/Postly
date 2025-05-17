@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import authService from '../appwrite/auth'
 import {Link ,useNavigate} from 'react-router-dom'
 import {login} from '../Store/authSlice.js'
-import {Button, Input, Logo} from './index.js'
+import {Button, Input, Logo} from './index.jsx'
 import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
 
