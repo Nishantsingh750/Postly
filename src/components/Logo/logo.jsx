@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import logoImage from '../../assets/logo.png';
+ // Adjust the path as needed
 
-function logo({width = '100px'}) {
+function Logo({classname, width = '80px' }) {
   return (
-    <div>logo</div>
-  )
+    <img src={logoImage} alt="Postly Logo" className={`object-cover ${classname}`}style={{ width ,height: width}} />
+  );
 }
 
-export default logo
+export default Logo;

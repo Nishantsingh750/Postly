@@ -4,7 +4,7 @@ import { PostForm } from '../components'
 
 function AddPost() {
   return (
-    <div className='py-8'>
+    <div className='py-8 bg-gradient-to-t from-black-100 to-white'>
         <Container>
             <PostForm />
         </Container>

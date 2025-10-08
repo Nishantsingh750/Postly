@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import authService from '../appwrite/auth'
 import {Link ,useNavigate} from 'react-router-dom'
 import {login} from '../Store/authSlice.js'
-import {Button, Input, Logo} from './index.jsx'
+import {Button, Input, Logo} from './index.js'
 import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
 
@@ -35,7 +35,7 @@ function Signup() {
             <Logo width="100%" />
           </span>
         </div>
-        <h2 className="text-center text-2xl font-bold leading-tight">
+        <h2 className="text-center text-2xl font-bold leading-tight text-black">
           Sign up to create account
         </h2>
         <p className="mt-2 text-center text-base text-black/60">
@@ -44,7 +44,7 @@ function Signup() {
             to="/login"
             className="font-medium text-primary transition-all duration-200 hover:underline"
           >
-            Sign In
+            Log in
           </Link>
         </p>
         {error&& <p className="text-red-600 mt-8 text-center">{error}</p>}
