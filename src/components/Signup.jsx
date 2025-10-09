@@ -51,13 +51,13 @@ function Signup() {
         <form onSubmit={handleSubmit(create)}>
             <div className="space-y-5">
                 <Input 
-                Label="Full name"
+                label="Full name"
                 placeholder="Enter your fullname"
                 {...register("name",{
                     required:true,
                 })}
                 />
-               <Input label="email" placeholder="Enter your email" type="email" {...register("email",{
+               <Input label="Email" placeholder="Enter your email" type="email" {...register("email",{
                                  required: true,
                                  validate: {
                                    matchpattern: (value) =>{
@@ -66,7 +66,7 @@ function Signup() {
                                  }
                                })} />
                 <Input
-                 label="password"
+                 label="Password"
                  type="password"
                  placeholder="Enter your password"
                  {

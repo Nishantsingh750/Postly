@@ -45,7 +45,7 @@ function Login() {
             {error && <p className='text-red-500 text-center'>{error }</p>}
             <form onSubmit={handleSubmit(login)} className='mt-8'>
               <div className='space-y-5'>
-                <Input label="email" placeholder="Enter your email" type="email" {...register("email",{
+                <Input label="Email" placeholder="Enter your email" type="email" {...register("email",{
                   required: true,
                   validate: {
                     matchpattern: (value) =>{
@@ -53,7 +53,7 @@ function Login() {
                     }
                   }
                 })} />
-                <Input  label ="password" type="password" placeholder="Enter" {...register("password",{
+                <Input  label ="Password" type="password" placeholder="Enter" {...register("password",{
                   required:true,
                 })}/>
                 <Button type ="submit" className="mx-auto block px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">Log in</Button>

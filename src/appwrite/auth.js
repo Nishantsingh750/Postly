@@ -50,6 +50,8 @@ export class AuthService {
 
         try {
             await this.account.deleteSessions();
+            localStorage.clear();
+            sessionStorage.clear();
         } catch (error) {
             console.log("Appwrite serive :: logout :: error", error);
         }
